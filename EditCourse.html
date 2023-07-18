@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editcourse</title>
+    <link rel ="stylesheet" href="assets/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/assets/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="assets/assets/css/Edit.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+
+  </head>
+  <body>
+
+     <!-----------Start Header------------>
+     <header class="main-header clearfix" role="header">
+        <div class="logo">
+          <a href="">FCAI</a>
+        </div>
+        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="main-nav" role="navigation">
+          <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-submenu">
+            
+            </li>
+            <li><a href="index.html">more info</a></li>
+            <!-- <li><a href="#section5">Video</a></li> -->
+            <li><a href="index.html">Contact US</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-----------End Header------------>
+
+    <form enctype="multipart/form-data" action="{% url 'login_admi' %}" method="post" >
+    
+        <input id="upload" type=file name="files[]" >
+        <div class="input-field">
+          <input type="submit" class="btn save submit" value="Save"></input>
+    </div>
+      <br>
+       
+    
+    
+  </form>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Semester No</th>
+                    <th scope="col">Course Code</th>
+                    <th scope="col"> Course Name</th>
+                    <th scope="col">Course Doctor</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class='no'> </td>
+                    <td class='code'></td>
+                    <td class='name'></td>
+                    <td class='doc'></td>
+                    <td><input type='button' class='btn btn-success' value="Add"></input> <input class='btn btn-danger' type='button' value="Remove"></input> <input class='btn edit' type='button' value="Edit"></input><input type="submit" class="btn save" value="Save"></input> </td>
+                </tr>
+      
+            </tbody>
+        </table>
+        <!-----footer---------->
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <p>
+                  Faculty Of Computers and Artificial Intelligence
+                  
+                      <a href="https://www.facebook.com/FayoumU" rel="sponsored" target="_parent"
+                      >FCI</a
+                 
+              </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!---------------End Fooetr----------->
+          
+        <script src="assets/assets/js/Editofcourse.js"></script>
+        <script src="index/vendor/jquery/jquery.min.js"></script>
+        <script src="index/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+        <script src="assets/js/isotope.min.js"></script>
+        <script src="assets/js/owl-carousel.js"></script>
+        <script src="assets/js/lightbox.js"></script>
+        <script src="assets/js/tabs.js"></script>
+        <script src="assets/js/video.js"></script>
+        <script src="assets/js/slick-slider.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/index.js"></script>
+ 
+</body>
+</html>
